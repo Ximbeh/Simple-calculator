@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+    <style>
+        body {
+            margin: 0
+        }
+
+        header {
+            background-color: #442f6d;
+            height: 60px;
+            padding: 25px;
+        }
+
+        header h1 {
+            text align: center;
+            color: #fcd181
+        }
+
+        .container {
+            border: 2px solid #0f071fd7;
+            border-radius: 10px;
+       
+            padding: 10px;
+
+        }
+
+        input {
+            margin top: 120px;
+            margin left: 30px;
+            width:99%;
+            padding:5px; 
+        }
+
+        Input:hover{
+            background-color: #fcd181;
+        }
+        buttom {
+
+            margin: 5px;
+            widht: 99%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 align="center">Simple calculator</h1>
+    </header>
+    <div class="container">
+        <input type="number" id="x" placeholder="X Value">
+        <input type="number" id="y" placeholder="Y Value">
+        <input type="number" id="z" placeholder="Result" readonly>
+        <button type="buttom" onclick="somar()">Sum</button>
+        <button type="buttom">Subtraction</button>
+        <button type="buttom">Multiplication</button>
+        <button type="buttom">Division  </button>
+        
+
+    </div>
+
+    <script>
+        const somar = function(){
+            let x = document.getElementById('x').value
+            let y = document.getElementById('y').value
+            z = parseFloat(x) + parseFloat(y)
+            document.getElementById('z').value = z
+            console.log(z)
+        }
+        const subtrair = function(){
+            let x = document.getElementById('x').value
+            let y = document.getElementById('y').value
+            z = parseFloat(x) + parseFloat(y)
+            document.getElementById('z').value = z
+            console.log(z)
+        }
+
+    </script>
+
+
+</body>
+
+</html>
